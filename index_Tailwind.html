@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Rating Website</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./Assets/Images/favicon.png">
+    <link href="/src/output.css" rel="stylesheet">
+    
+</head>
+
+<body class="bg-Azul-Muy-Oscuro text-white font-Overpass h-screen grid place-content-center">
+    <main> 
+        <div id="rating" class="gradient-background w-[347px] rounded-2xl p-4 sm:w-[450px] sm:p-8">
+            <div class="bg-Azul-Oscuro w-10 h-10 rounded-full grid place-content-center mb-4">
+                <img src="./Assets/Images/icon_star.png" alt="Icono Star">
+            </div>
+
+            <h2 class="text-2xl mb-2 sm:text-[28px]">¿Nos das tu opinión?</h2>
+
+            <p class="text-Gris-Claro mb-6">Puedes puntuar del 1 al 5 la calidad de nuestro servicio técnico. Todos los feedback son importantes para nosotros y nos ayudan a mejorar.</p>
+
+            <!-- La clase "circle" la he creado como una componente dentro de input.css -->
+            <div class="flex place-content-between mb-6">
+                <button class="circle">1</button>
+                <button class="circle">2</button>
+                <button class="circle">3</button>
+                <button class="circle">4</button>
+                <button class="circle">5</button>
+            </div>
+
+            <button id="submit-btn" class="bg-Naranja w-full rounded-[22px] h-[45px] uppercase text-Azul-Muy-Oscuro font-bold text-[14px] tracking-widest hover:bg-white cursor-pointer">Submit</button>
+        </div>
+
+        <div id="gratitude" class="hidden gradient-background w-[347px] rounded-2xl p-4 sm:w-[450px] sm:p-8">
+            <div class="flex justify-center mb-6">
+                <img class="w-[150px]" src="./Assets/Images/icon_rating.png" alt="Icono Rating">
+            </div> 
+
+            <div class="flex justify-center mb-6">
+            <p class="bg-Azul-Oscuro rounded-[22px] inline-block px-3 py-2 text-Naranja">Nos has calificado con <span id="score"></span> de 5 estrellas</p>
+            </div>
+
+            <h2 class="text-center text-2xl mb-10 sm:text-[28px]">Muchas gracias!</h2>
+        
+            <p class="text-center text-Gris-Claro">Agradecemos tu feedback y el tiempo que has dedicado a calificar nuestro servicio técnico esperamos que haya cumplido tus expectativas.</br>Si tienes alguna otra sugerencia, no dudes en contactar con nosotros.</p>
+
+        </div>
+
+    </main>
+
+    <script src="./main.js"></script>
+
+</body>
+
+<footer>
+    <p class="bg-Gris-Claro mt-6">&copy; 2025 Desarrollado con Html y Tailwind </p>
+</footer>
+
+</html>
+

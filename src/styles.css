@@ -1,0 +1,355 @@
+/*GENERALES*/
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif, Helvetica, Arial;
+}
+
+body{
+    background: url(../Images/Nodos_Red.jpg);
+    background-size: cover; /* Hace que la imagen cubra todo el contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-position: center; /* Centra la imagen en el contenedor */
+}
+
+a{
+    color: #4389C8;
+}
+
+a:visited{
+    color: #4389C8;
+}
+
+a:hover{
+    color: #555555;
+}
+
+.alert_blue{
+    color: #4389C8;
+}
+
+.alert_red{
+    color: #cd2929;
+}
+
+table{
+    text-align: center;
+    width: 100%;
+    border: 1px solid #555;
+}
+
+td{
+    border-top: 1px solid #ccc;
+    padding: 2px;
+}
+
+/* CONTAINER */
+#container{
+    width: 80%;
+    margin: 0px auto;
+    box-shadow: 0px 0px 10px gray;
+    background: rgba(255, 255, 255, 0.642);
+}
+
+/*HEADER*/
+#header{
+    height: 145px;
+    background: #F0F0F0;
+}
+
+#logo{
+    float: left;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+#logo img{
+    float: left;
+    height: 100px;
+}
+    /*Logo style*/
+#logo a{    
+    float: left;
+    width: 600px;
+    padding-top: 20px;
+    padding-left: 20px;
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    color: #4389C8;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    margin-left: 25px;
+    text-shadow: 0px 2px 1px #222222;
+    transition: all 300ms;
+}
+
+#logo a:hover{
+    text-shadow: 0px 2px 1px #222222, 0px 0px 8px #01B1EA;
+}
+
+/*MENU*/
+#menu{
+    clear:both;              /*Limpiamos los floats de arriba*/
+    background: #222222;
+    color: white;
+    height: 55px;
+    border-bottom: 4px solid #4389C8;
+    display: flex;              /*CENTRAR EL MENÚ EN LA BARRA*/
+    justify-content: center;    /*CENTRAR EL MENÚ EN LA BARRA*/
+    align-items: center;        /*CENTRAR EL MENÚ EN LA BARRA*/
+}
+#menu ul{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px auto;
+    /*margin-left: 25px;           CENTRAR EL MENÚ EN LA BARRA*/
+}
+#menu ul li{
+    line-height: 55px;
+    float: left;
+    border-right: 1px solid #363636;
+}
+#menu a{
+    display: block;                 /*COMPORTAMIENTO DE BLOQUE*/
+    color: white;
+    text-decoration: none;          /*QUITA LINEA DE HIPERVINCULO*/
+    padding-left: 20px;             /*SEPARACIÓN DEL ENLACE A LA CAJA*/
+    padding-right: 20px;            /*SEPARACIÓN DEL ENLACE A LA CAJA*/
+    transition: all 300ms;
+}
+#menu a:first-child{
+    border-left: 1px solid #363636;
+}
+#menu a:hover{
+    background: #4389C8;
+}
+
+#content{
+    margin: 0px auto;               /*CENTRA EL CONTENIDO DEL CONTENEDOR*/
+    overflow: hidden;               /*OCULTO LO QUE SOBRESALE DEL CONTENEDOR*/
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* SIDEBAR */
+#lateral {
+    width: 24%;                     /*ANCHO MÍNIMO DE LA BARRA*/
+    min-height: 500px;              /*ALTURA MÍNIMA*/
+    float: left;                    /*ALINEACIÓN A LA IZQUIERDA*/
+    margin-top: 20px;               /*MARGEN SURPERIOR*/
+    margin-left: 10px;              /*MARGEN IZQUIERDO*/
+}
+#lateral .block_aside{
+    display: block;
+    width: 90%;                     /*TAMAÑO RESPECTO BARRA LATERAL*/
+    margin: 5px auto;
+    padding: 10px;
+}
+#lateral h3{
+    display: block;
+    color: #222222;
+    width: 100%;                    /*ANCHO MÁXIMO*/
+    text-align: center;             /*ALINEACIÓN DEL TEXTO*/
+    padding-top: 2px;               /*SEPARACIÓN SUPERIOR*/
+    padding-bottom: 2px;            /*SEPARACIÓN INFERIOR*/
+    margin-bottom: 15px;            /*SEPARACIÓN DEL FORMULARIO INFERIOR*/
+    margin: 5px auto;
+    font-size: 16px;
+    font-weight: bold;
+    background: #E1E1E1;
+    border-bottom: 2px solid #4389C8;
+}
+#lateral ul{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+#lateral ul li{
+    list-style: none;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+#lateral ul li a{
+    margin-left: 3px;
+}
+
+#icono img{
+    width: 18px;
+}
+
+/* FORMS */
+.form_container{
+    width: 50%;
+}
+
+label,
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea {
+    display: block;
+    width: 95%;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+select, textarea {
+    border: 1px solid #C9C9C9;
+    box-shadow: 0px 0px 2px #CCC inset;
+    background: white;
+    padding: 2px;
+    color: gray;
+    transition: all 300ms;
+}
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+select{
+    border: 1px solid #1579B5;
+    color: black;
+}
+input[type="button"],
+input[type="submit"],
+button, .button{
+    display: block;
+    float: left;
+    margin-right: 5px;
+    border-radius: 2px;
+    width: auto;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    background: #2979CD;
+    border: 1px solid #11608E;
+    cursor: pointer;
+}
+
+.button{
+    background: #2979CD;
+    color: white !important;
+    text-decoration: none;
+}
+
+.button-small{
+    width: 120px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.button-small-G{
+    background: #29cd31;
+    border: 1px solid #006210;
+}
+.button-small-R{
+    background: #cd2929;
+    border: 1px solid #620000;
+}
+
+input[name="confirm"] {
+    background-color: #cd2929;
+    border: 1px solid #620000;
+    color: white;
+    cursor: pointer;
+}
+
+label,
+input[type="button"],
+input[type="submit"],
+button{
+    display: block;
+    margin-top: 10px;
+}
+
+/* MAIN BODY */
+#central{
+    width: 70%;                             /*ANCHO TOTAL*/
+    min-height: 620px;                      /*ALTURA MÍNIMA*/
+    float: right;                           /*ALINEACIÓN A LA DERECHA*/
+    border-left: 1px solid #CCC;          /*BORDE IZQ*/
+    box-shadow: -5px -1px 5px #DDD;       /*SOMBREADO DE LA CAJA*/
+    padding: 25px;                          /*ALINEACIÓN*/    
+}
+#imagen{
+    clear: both;
+    width: auto;
+}
+
+#central h1{
+    font-size: 24px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    text-align: center;
+    border-bottom: 1px solid #CCC;
+    margin-bottom: 20px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+#calend{
+    display: flex;                  /*JUSTIFICACIÓN DEL CALENDARIO*/ 
+    justify-content: center;        /*JUSTIFICACIÓN DEL CALENDARIO*/ 
+    align-items: center;            /*JUSTIFICACIÓN DEL CALENDARIO*/ 
+}
+/*CALENDARIO*/
+#calend .cal {    
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    margin: 0;
+}
+#calend .calendar {
+    width: auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+    filter:alpha(opacity=70);
+    -moz-opacity:.70;opacity:.70;
+}
+#calend .calendar-header {
+    text-align: center;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+#calend .calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 5px;
+    text-align: center;
+}
+#calend .day-name, .day {
+    padding: 10px;
+    border-radius: 3px;
+}
+#calend .day-name {
+    font-weight: bold;
+    color: #555;
+}
+#calend .day {
+    color: #333;
+}
+#calend .day.today {
+    background-color: #ffeb3b;
+    color: #000;
+    font-weight: bold;
+}
+
+/* FOOTER */
+#footer{
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: white;
+    background: #222222;
+    border-top: 5px solid #4389C8;
+}

@@ -1,0 +1,4 @@
+Curso YouTube: https://www.youtube.com/playlist?list=PLJubkp8BnTJu9khizC7ywblms1YzdLO3g
+
+
+npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch
