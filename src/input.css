@@ -8,6 +8,8 @@
     src: url("../Assets/Fonts/Overpass/Overpass-VariableFont_wght.ttf") format("woff2");
 }
 
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme{
     --color-White-00: hsl(222 50% 96.1%);
     --color-White-Grey:hsl(219 44.8% 88.6%);

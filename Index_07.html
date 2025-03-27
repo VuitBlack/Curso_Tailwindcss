@@ -4,31 +4,47 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página HTML Estándar</title>
+        <title>Video 7 - PSEUDOCLASES en Tailwind</title>
         <link href="/src/output.css" rel="stylesheet">
     </head>
 
-    <body class="font-Overpass sm:bg-amber-200 md:bg-blue-200 tablet:bg-red-200 desktop:bg-green-200">
+    <body class="p-4 font-Overpass">
+      
+        <!-- pseudo clase AFTER-->
+        <button class="bg-orange-600 w-32 p-3 rounded-md relative after:content-[''] after:absolute after:left-32 after:border-8 after:border-transparent after:border-l-orange-600 after:top-4">Haz click aquí</button>
 
-        <section class="desktop:flex">
-            <div class="border-2 border-black p-6 w-80 mx-auto mt-10 lg:w-96">
-                <h1 class="text-xl font-bold sm:text-2xl lg:text-3xl">Hola Mundo </h1>
-                <p class="mt-4 md:text-2xl">Este es un ejemplo de una página HTML con Tailwind para dar los estilos y realizar un diseño que se adapte a las diferentes pantallas en función de la resolución</p>
-            </div>
-            <div class="border-2 border-black p-6 w-80 mx-auto mt-10 lg:w-96">
-                <h1 class="text-xl font-bold sm:text-2xl lg:text-3xl">Hola Mundo </h1>
-                <p class="mt-4 md:text-2xl">Este es un ejemplo de una página HTML con Tailwind para dar los estilos y realizar un diseño que se adapte a las diferentes pantallas en función de la resolución</p>
-            </div>
-            <div class="border-2 border-black p-6 w-80 mx-auto mt-10 lg:w-96">
-                <h1 class="text-xl font-bold sm:text-2xl lg:text-3xl">Hola Mundo </h1>
-                <p class="mt-4 md:text-2xl">Este es un ejemplo de una página HTML con Tailwind para dar los estilos y realizar un diseño que se adapte a las diferentes pantallas en función de la resolución</p>
-            </div>
-        </section>
-        
+        <!-- pseudo clase PLACEHOLDER-->
+         <input class="border ml-2 px-2 placeholder:text-orange-600 placeholder:italic" type="text" placeholder="Nombre:">
+
+        <br><br>
+
+        <!-- pseudo clase FILE-->
+        <input type="file" class="file:bg-violet-100 file:border-0 file:rounded-lg file:text-violet-700 file:font-semibold file:px-3 hover:file:bg-violet-300"> 
+
+        <br><br>
+
+        <!-- pseudo clase MARKER-->
+         <ol class="list-decimal ml-6 marker:text-red-500 marker:font-bold">
+            <li class="">Elemento 1</li>
+            <li class="">Elemento 2</li>
+            <li class="">Elemento 3</li>
+         </ol>
+
+         <br><br>
+
+        <!-- pseudo clase SELECTION-->
+         <p class="selection:bg-green-500 selection:text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi tristique felis quis viverra imperdiet. Vivamus viverra enim dui, id lobortis mi mollis nec. Curabitur sed massa dapibus, placerat urna at, porta nibh. Vivamus massa neque, maximus eget turpis sed, porttitor vehicula purus. Donec placerat accumsan cursus. Fusce malesuada eros sit amet nisi hendrerit, ac ullamcorper nibh suscipit. Etiam ac magna a enim rhoncus feugiat. Nam semper enim scelerisque condimentum posuere.</p>
+
+         <br><br>
+
+        <!-- pseudo clase FIRST-LINE & FIRST-LETTER-->
+         <p class="first-line:uppercase first-line:tracking-widest first-letter:text-7xl first-letter:font-bold first-letter:mr-3 first-letter:float-left">Vestibulum in pellentesque urna, in tincidunt velit. Maecenas vitae iaculis metus, ac ultrices dolor. Fusce in ultricies magna. Proin nec eros quis est lacinia condimentum. Cras blandit, neque ac fringilla sollicitudin, lorem leo viverra orci, pellentesque bibendum eros leo at sem. Phasellus vitae aliquet nulla. Etiam neque nunc, tristique eget odio quis, condimentum lobortis elit. Morbi posuere at felis quis porta. Curabitur quam augue, commodo et pretium in, pulvinar sollicitudin quam. </p>
+
+
     </body>
 
     <footer>
-        <p class="bg-red-200 font-Overpass mt-40 md:bg-amber-200 tablet:bg-blue-200 desktop:bg-violet-300">&copy; 2025 Desarrollado con Html y Tailwind </p>
+        <p class="bg-blue-200 font-Overpass mt-40">&copy; 2025 Desarrollado con Html y Tailwind </p>
     </footer>
 </html>
 
